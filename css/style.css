@@ -1,0 +1,298 @@
+body {
+  font-family: 'Tajawal', sans-serif;
+  font-size: 16px;
+  margin: 0;
+}
+
+.header-nav {
+  width: 90%;
+  justify-content: space-between;
+  margin: 30px auto;
+}
+
+#nav-bar ul {
+  width: 80%;
+  justify-content: space-between;
+  list-style: none;
+  display: flex;
+  margin: 0 auto;
+  padding-left: 0;
+}
+
+#nav-bar li {
+  font-size: 1rem;
+    margin-top: 5px;
+}
+
+#nav-bar li a {
+  text-decoration: none;
+  color: black;
+
+}
+.logo {
+  display: flex;
+  margin-top: 10px;
+
+}
+
+.logo p {
+  margin-top: -10px;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.logo i {
+  font-size: 1rem;
+  color: #0ab;
+  font-size: 1rem;
+
+}
+
+#home{
+  text-align: center;
+  margin-top: 10vh;
+}
+
+#home h1 {
+  font-size: 1.4rem;
+}
+
+form label {
+  font-size: 1rem;
+}
+
+form input {
+  padding: 4px 8px;
+  margin-top: 10px;
+}
+
+button {
+  color: #0ab;
+  background: white;
+  border: 1px solid #0ab;
+  width: 60px;
+  height: 27px;
+}
+
+#features .features-body {
+  width: 100%;
+  margin: 10vh auto;
+}
+
+#features i {
+  font-size: 5rem;
+  color: #0ab;
+  text-align: center;
+  padding-top: 4px;
+}
+
+.description {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.description-inner {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.fix {
+  margin-top: 10px;
+}
+
+.description-inner h2 {
+  margin-top: 1rem;
+
+}
+
+.description-inner p {
+  font-size: 1.2em;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+iframe {
+  display: block;
+  margin: 0 auto;
+
+}
+
+#price h2 {
+  text-align: center;
+  padding-top: 3rem;
+}
+
+
+
+.pricing {
+  width: 100%;
+
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.pricing-indiv {
+  width: 90%;
+  margin:2rem auto;
+  text-align: center;
+  border: 3px solid #0ab;
+}
+
+.pricing-indiv h3{
+  font-size: 2rem;
+  background: #0ab;
+  color: white;
+  margin-top:0;
+}
+
+.pricing-indiv h4 {
+  font-size: 1.5rem;
+}
+
+.pricing-indiv button {
+  background:#0ab;
+  color: white;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+#footer {
+  margin-top: 5vh;
+
+}
+
+.info {
+  background: #0ab;
+}
+
+.footer-nav {
+
+  width: 100%;
+  margin: 0 auto;
+  background: #0ab;
+}
+
+.footer-nav #nav-bar ul {
+
+  margin-bottom: 0px;
+
+}
+
+.footer-nav #nav-bar ul a {
+  color: white;
+}
+
+.footer-nav p {
+  color: white;
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+  .header-nav #nav-bar a {
+    font-size: 1.3rem;
+  }
+
+  .pricing-indiv {
+    width: 60%;
+  }
+}
+
+@media (min-width: 800px) {
+  .header-nav {
+    display: flex;
+    width: 90%;
+  }
+
+  .header-nav #nav-bar ul {
+    width: 40vw;
+  }
+  .pricing-indiv {
+    width: 60%;
+  }
+
+  #home h1 {
+    font-size: 2rem;
+  }
+
+  #email-label {
+    font-size: 1.5rem;
+  }
+
+  .description {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+
+  }
+
+  .description-inner {
+    text-align: left;
+
+  }
+
+  .description-inner h2 {
+    margin-bottom: 0;
+  }
+
+  .description i {
+    margin-right: 2rem;
+  }
+  .fix {
+    margin-right: 0;
+  }
+
+  .p-fix {
+    margin-left: 25px;
+  }
+
+  iframe {
+    width: 520px;
+    height: 415px;
+  }
+}
+
+@media (min-width:980px) {
+  .header-nav {
+    width: 980px;
+  }
+
+  .header-nav #nav-bar ul {
+    width: 300px;
+  }
+
+  #home h1 {
+    font-size: 3rem;
+  }
+
+  #home label {
+    font-size: 2rem;
+  }
+
+  #home input, #home button {
+    font-size: 1.5rem;
+  }
+
+  #home button {
+    width: 100px;
+    height: 40px;
+  }
+
+  .description {
+    width: 980px;
+    margin: 0 auto;
+  }
+
+  .p-fix {
+    margin-left: 60px;
+  }
+
+  .pricing {
+    width: 980px;
+    display: flex;
+  }
+
+  .pricing-indiv {
+    width: 30%;
+  }
+}
