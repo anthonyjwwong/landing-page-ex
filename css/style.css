@@ -1,3 +1,16 @@
+html {
+  font-size: 16px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.displayNone {
+  display: none;
+}
+
 body {
   font-family: 'Tajawal', sans-serif;
   font-size: 16px;
@@ -8,15 +21,17 @@ body {
   width: 90%;
   justify-content: space-between;
   margin: 30px auto;
+  display: flex;
 }
 
 #nav-bar ul {
-  width: 80%;
+  width: 55vw;
   justify-content: space-between;
   list-style: none;
   display: flex;
-  margin: 0 auto;
+  margin: -3px auto;
   padding-left: 0;
+  
 }
 
 #nav-bar li {
@@ -31,14 +46,22 @@ body {
 }
 .logo {
   display: flex;
-  margin-top: 10px;
+  text-align: center;
+}
 
+.gradient {
+  background: -webkit-linear-gradient(#43464B, gray);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .logo p {
-  margin-top: -10px;
-  font-size: 30px;
+  color: gray;
+  font-size: 1.3rem;
   margin-bottom: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+
 }
 
 .logo i {
@@ -54,7 +77,10 @@ body {
 }
 
 #home h1 {
-  font-size: 1.4rem;
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  margin-bottom: 3%;
 }
 
 form label {
@@ -76,7 +102,14 @@ button {
 
 #features .features-body {
   width: 100%;
-  margin: 10vh auto;
+  margin: 16vh auto;
+}
+
+#features h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  margin-bottom: 10px;
+  color: #0ab;
 }
 
 #features i {
@@ -144,17 +177,24 @@ iframe {
   background: #0ab;
   color: white;
   margin-top:0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  padding: 10px;
 }
 
 .pricing-indiv h4 {
   font-size: 1.5rem;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .pricing-indiv button {
   background:#0ab;
   color: white;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+  font-size: 1rem;
+
 }
 
 #footer {
@@ -188,10 +228,39 @@ iframe {
   text-align: center;
 }
 
+
+/*********************
+  Media Queries
+*********************/
+@media (min-width: 321px) {
+  #home h1 {
+    font-size: 3rem;
+  }
+}
+
+
 @media (min-width: 600px) {
   .header-nav #nav-bar a {
     font-size: 1.3rem;
   }
+
+  #home h1 {
+      font-size: 3rem;
+  }
+
+  #features .features-body {
+    width: 100%;
+    margin: 7vh auto;
+  }
+
+  iframe {
+    width: 80%;
+    height: 40vh;
+  }
+
+.description-inner p {
+  text-align: left;
+}
 
   .pricing-indiv {
     width: 60%;
@@ -199,9 +268,46 @@ iframe {
 }
 
 @media (min-width: 800px) {
+  .logo p{
+    font-size: 2rem;
+  }
   .header-nav {
     display: flex;
     width: 90%;
+  }
+
+  .description {
+    margin-top: 4rem;
+    text-align: center;
+    padding-top: 2rem;
+  }
+  
+  .description-inner {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 0.3rem;
+  }
+  
+  .fix {
+    margin-top: 10px;
+  }
+  
+  .description-inner h2 {
+    margin-top: 1rem;
+  
+  }
+  
+  .description-inner p {
+    font-size: 1.2em;
+    margin-top: 0;
+  }
+  
+  .description .fa-avianex,.description .fa-award,.description .fa-adn {
+    padding-top: 3rem;
+  }
+  #home h1 {
+    font-size: 4.5rem;
   }
 
   .header-nav #nav-bar ul {
@@ -211,9 +317,7 @@ iframe {
     width: 60%;
   }
 
-  #home h1 {
-    font-size: 2rem;
-  }
+
 
   #email-label {
     font-size: 1.5rem;
@@ -295,4 +399,10 @@ iframe {
   .pricing-indiv {
     width: 30%;
   }
+
+  .description .fa-avianex,.description .fa-award,.description .fa-adn {
+    padding-top: 3.4rem;
+
+  }
+
 }
